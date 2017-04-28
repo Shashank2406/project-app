@@ -1,0 +1,7 @@
+<div class="well">
+  <form #form="ngForm" (ngSubmit)="check(form)">
+  <label>Username</label>
+  <input type="text" name="username" [(ngModel)]="user" #username="ngModel" placeholder="Enter your name" >
+  <button type="Submit" class="btn btn-success">Submit</button>
+  </form> 
+</div>  
