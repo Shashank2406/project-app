@@ -13,7 +13,7 @@ const rou: Routes=[
 {path:' ' ,component:AppComponent},
 {path:'details' ,component:DetailsComponent},
 {path:'username' ,component:UsernameComponent},
-{path:'prodent' ,component:ProdetComponent}
+{path:'prodet' ,component:ProdetComponent}
 ];
 @NgModule({
   declarations: [
