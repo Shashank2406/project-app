@@ -13,11 +13,11 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit() {
     this.hello="hello";
-    // this.fetchgit()
+    this.fetchgit()
   }
  fetchgit(){
     this.fetch.getdetails().subscribe(b => {
-      console.log(b);
+      //this.a=JSON.stringify(b);
       this.a=b;
     })
     
