@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { DetailsComponent } from './details/details.component';
 import { ConnectService } from './connect.service';
 import { UsernameComponent } from './username/username.component';
+import { ProdetComponent } from './prodet/prodet.component';
 const rou: Routes=[
 {path:' ' ,component:AppComponent},
 {path:'details' ,component:DetailsComponent},
@@ -17,7 +18,8 @@ const rou: Routes=[
   declarations: [
     AppComponent,
     DetailsComponent,
-    UsernameComponent
+    UsernameComponent,
+    ProdetComponent
   ],
   imports: [
     BrowserModule,
