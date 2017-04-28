@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map'
 @Injectable()
 export class ConnectService {
   public name:string="";
-  constructor(private httpService: Http) { 
+  constructor(private httpService: Http,private httpService1: Http) { 
     // this.name="anshdesire";
   }
     
@@ -35,8 +35,8 @@ export class ConnectService {
     a=a+b+c;
     //a.replace('%20', "");
     console.log(a);
-    return this.httpService.get(a).map(
-      data => data.json()
+    return this.httpService1.get(a).map(
+      data1 => data1.json()
     );
   }
 

@@ -12,7 +12,8 @@ import { ProdetComponent } from './prodet/prodet.component';
 const rou: Routes=[
 {path:' ' ,component:AppComponent},
 {path:'details' ,component:DetailsComponent},
-{path:'username' ,component:UsernameComponent}
+{path:'username' ,component:UsernameComponent},
+{path:'prodent' ,component:ProdetComponent}
 ];
 @NgModule({
   declarations: [
