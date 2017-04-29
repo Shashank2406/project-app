@@ -22,6 +22,10 @@ export class ConnectService {
       data => data.json()
     );
   }
+  valid()
+  {
+    
+  }
   setuser(dat)
   {
      this.name=dat;
