@@ -1,12 +1,18 @@
-<div class="container">
+<!--<div class="container">
   <div class="page-header">
   <h3>Project Details</h3>
   </div>
   <ul class="list-group">
   <li class="list-group-item list-group-item-info">Login:{{b[0].name}}</li>
-  <!--<li class="list-group-item list-group-item-info">Git ID:{{a.id}}</li>
+  <li class="list-group-item list-group-item-info">Git ID:{{a.id}}</li>
   <li class="list-group-item list-group-item-info">Name:{{a.name}}</li>
   <li class="list-group-item list-group-item-info">Email:{{a.email}}</li>
-  <li class="list-group-item list-group-item-info">URL:{{a.html_url}}</li>-->
+  <li class="list-group-item list-group-item-info">URL:{{a.html_url}}</li>
   </ul>
-</div>
+</div>-->
+<div class="well">
+  <form #form="ngForm" (ngSubmit)="check(form)">
+  <label>Project</label>
+  <input type="text" name="project" [(ngModel)]="pro" #project="ngModel" placeholder="Enter Project Name" >
+  <button type="Submit" class="btn btn-success" >Search</button>
+</form> 

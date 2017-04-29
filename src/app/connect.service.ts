@@ -26,13 +26,14 @@ export class ConnectService {
   {
      this.name=dat;
   }
-  getprodat():Observable<any>
+  getprodat(name):Observable<any>
   {
     console.log(this.name);
-    var a:string='https://api.github.com/users/';
-    var b:string=this.name.trim();
-    var c:string='/repos'
-    a=a+b+c;
+    var a:string='https://api.github.com/search/repositories?q=';
+    var b:string=name.trim();
+    // var c:string='/repos'
+    a=a+b;
+    alert(a);
     //a.replace('%20', "");
     console.log(a);
     return this.httpService1.get(a).map(
