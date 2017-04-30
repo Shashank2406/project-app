@@ -14,7 +14,9 @@
   <form #form="ngForm" (ngSubmit)="check(form)">
   <label>Project</label>
   <input type="text" name="project" [(ngModel)]="pro" #project="ngModel" placeholder="Enter Project Name" >
-  <button type="Submit" class="btn btn-success" >Search</button>
+  <button type="submit" class="btn btn-primary">
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search
+  </button>
 </form>
 
 <div *ngIf="form.submitted">
