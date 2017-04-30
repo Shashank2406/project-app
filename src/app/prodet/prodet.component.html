@@ -15,4 +15,10 @@
   <label>Project</label>
   <input type="text" name="project" [(ngModel)]="pro" #project="ngModel" placeholder="Enter Project Name" >
   <button type="Submit" class="btn btn-success" >Search</button>
-</form> 
+</form>
+
+<div class="well" *ngIf="form.submitted">
+  <ul class="list-group">
+  <li class="list-group-item list-group-item-info">No of matching results:{{b.total_count}}</li>
+  </ul>
+</div>   

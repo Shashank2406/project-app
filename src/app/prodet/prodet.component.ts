@@ -15,11 +15,12 @@ export class ProdetComponent implements OnInit {
   }
   check(form)
   {
-    alert(form.value.project)
     this.pro1.getprodat(form.value.project).subscribe(a=>{
-      console.log(a)
-      this.b=a;}
-      
+      // console.log(a.items[0])
+      this.b=a;
+      console.log(this.b);
+  }
+    
     );
   }
 }

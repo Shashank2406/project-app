@@ -14,11 +14,11 @@ export class UsernameComponent implements OnInit {
   ngOnInit() {
     this.user="";
   }
-  check(form)
+  check(form1)
   {
-    console.log(form.value.username);
-    console.log(form);
-    this.send.setuser(form.value.username);
+    console.log(form1.value.username);
+    console.log(form1);
+    this.send.setuser(form1.value.username);
     this.send.getdetails().subscribe(b => {
       //this.a=JSON.stringify(b);
       this.a=b;

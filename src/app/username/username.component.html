@@ -1,12 +1,12 @@
 <div class="well">
-  <form #form="ngForm" (ngSubmit)="check(form)">
+  <form #form1="ngForm" (ngSubmit)="check(form1)">
   <label>Username</label>
   <input type="text" name="username" [(ngModel)]="user" #username="ngModel" placeholder="Enter your Username" >
   <button type="Submit" class="btn btn-success" >Search</button>
   
   </form> 
 </div>  
-<div class="well" *ngIf="form.submitted">
+<div class="well" *ngIf="form1.submitted">
   <ul class="list-group">
   <li class="list-group-item list-group-item-info">Login:{{a.login}}</li>
   <li class="list-group-item list-group-item-info">Git ID:{{a.id}}</li>
