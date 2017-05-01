@@ -26,11 +26,11 @@ export class ConnectService {
   {
      this.name1=dat;
   }
-  getprodat(name):Observable<any>
+  getprodat(name_pro):Observable<any>
   {
    
     var a:string='https://api.github.com/search/repositories?q=';
-    var b:string=name.trim();
+    var b:string=name_pro.trim();
     a=a+b;
     return this.httpService1.get(a).map(
       data1 => data1.json()

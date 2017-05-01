@@ -7,7 +7,7 @@ import { ConnectService } from '../connect.service';
   styleUrls: ['./prodet.component.css']
 })
 export class ProdetComponent implements OnInit {
-  pro:string;
+  public pro:string;
   constructor(public pro1:ConnectService) { }
   public b:Object={ };
   ngOnInit() {
@@ -18,7 +18,9 @@ export class ProdetComponent implements OnInit {
     this.pro1.getprodat(form.value.project).subscribe(a=>{
       // console.log(a.items[0])
       this.b=a;
+      console.log(a.items[0].id);
       console.log(this.b);
+      
   }
     
     );

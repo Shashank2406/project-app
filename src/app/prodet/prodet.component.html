@@ -1,15 +1,3 @@
-<!--<div class="container">
-  <div class="page-header">
-  <h3>Project Details</h3>
-  </div>
-  <ul class="list-group">
-  <li class="list-group-item list-group-item-info">Login:{{b[0].name}}</li>
-  <li class="list-group-item list-group-item-info">Git ID:{{a.id}}</li>
-  <li class="list-group-item list-group-item-info">Name:{{a.name}}</li>
-  <li class="list-group-item list-group-item-info">Email:{{a.email}}</li>
-  <li class="list-group-item list-group-item-info">URL:{{a.html_url}}</li>
-  </ul>
-</div>-->
 <div class="well">
   <form #form="ngForm" (ngSubmit)="check(form)">
   <label>Project</label>
@@ -17,10 +5,12 @@
   <button type="submit" class="btn btn-primary">
   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search
   </button>
+  
 </form>
 
 <div *ngIf="form.submitted">
   <ul class="list-group">
-  <li class="list-group-item list-group-item-info">No of matching results:{{b.total_count}}</li>
+  <!--<li class="list-group-item list-group-item-info">No of matching results:{{b.total_count}}</li>-->
+  <li *ngFor="let item of b.items " class="list-group-item list-group-item-info">{{item.name}}</li>
   </ul>
 </div>   
